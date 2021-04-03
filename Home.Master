@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="Project.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="homepage1.css">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="margin-left: 440px">
+            <asp:Image ID="Academylogo" runat="server" Height="92px" ImageAlign="Middle" ImageUrl="~/Images/academylogo.jpg" Width="103px" />
+        </div>
+        <div>
+            <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <asp:LinkButton runat="server" BackColor="White" BorderColor="White" BorderStyle="Double" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Height="47px" OnClick="LinkButton1_Click" Width="75px" PostBackUrl="~/Welcome.aspx" Font-Underline="False">Welcome</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;
+            <asp:LinkButton runat="server" BackColor="White" BorderColor="White" BorderStyle="Double" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Height="47px" OnClick="LinkButton2_Click1" Width="35px" PostBackUrl="~/Bio.aspx" Font-Underline="False">Bio</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;
+            <asp:LinkButton runat="server" BackColor="White" BorderColor="White" BorderStyle="Double" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Height="47px" OnClick="LinkButton3_Click1" Width="98px" Font-Underline="False" PostBackUrl="~/StageEvents.aspx">StageEvents</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;
+            <asp:LinkButton runat="server" BackColor="White" BorderColor="White" BorderStyle="Double" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Height="47px" OnClick="LinkButton4_Click1" Width="69px" Font-Underline="False" PostBackUrl="~/Gallery.aspx">Gallery</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;
+            <asp:LinkButton runat="server" BackColor="White" BorderColor="White" BorderStyle="Double" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Height="47px" OnClick="LinkButton5_Click1" Width="91px" Font-Underline="False" PostBackUrl="~/BOLLYPOP.aspx">BOLLYPOP</asp:LinkButton>
+         </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p>
+                &nbsp;</p>
+            </asp:ContentPlaceHolder>
+         <div>
+          <div>
+              <div style="margin-left: 80px">
+                  <asp:DropDownList ID="DropDownList1" runat="server" Height="33px" Width="750px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                      <asp:ListItem>Select Page</asp:ListItem>
+                      <asp:ListItem>Welcome</asp:ListItem>
+                      <asp:ListItem>Bio</asp:ListItem>
+                      <asp:ListItem>StageEvents</asp:ListItem>
+                      <asp:ListItem>Gallery</asp:ListItem>
+                      <asp:ListItem>BOLLYPOP</asp:ListItem>
+                  </asp:DropDownList>
+              </div>
+              <div>
+                  <h4 style="margin-left: 320px">RuShi Dance Academy of TEAM "aaRh"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     is a divine place for learning.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     For more contact us at:-<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     contact no. :2453675489<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     email ID :teamaarh@gmail.com
+                 </h4>
+                  <div style="margin-left: 350px; font-size: 4px;">
+                      <h3>Follow us on</h3>
+                      <asp:ImageButton ID="ImageButton1" runat="server" Height="47px" Width="42px" ImageUrl="~/Images/FacebookIcon.png" OnClick="ImageButton1_Click" PostBackUrl="https://www.facebook.com/Rutuja-Shintre-103348704832285/" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <asp:ImageButton ID="ImageButton2" runat="server" Height="47px" Width="42px" ImageUrl="~/Images/Instagramicon.png" OnClick="ImageButton2_Click1" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <asp:ImageButton ID="ImageButton3" runat="server" Height="47px" Width="42px" ImageUrl="~/Images/YoutubeIcon.png" OnClick="ImageButton3_Click" />
+                  </div>
+              </div>
+           </div>
+        </div>
+    </form>
+</body>
+</html>
