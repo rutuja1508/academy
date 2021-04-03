@@ -1,0 +1,26 @@
+﻿h1 {
+    font-display: block;
+    font-family: Gabriola;
+    font-size: 75px;
+    font-synthesis: style;
+    text-align: center;
+}
+
+h2 {
+    text-align: unset;
+    font-family: Gabriola;
+    font-size: 35px;
+    margin-left: 120px;
+}
+
+h3 {
+    font-family: Gabriola;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+h4 {
+    font-family: Gabriola;
+    font-size: 20px;
+    margin-left: 320px;
+}
